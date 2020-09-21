@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Free CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 301697231,
+              "error_message": "java.lang.NullPointerException\r\n\tat com.qa.base.TestBase.initialization(TestBase.java:63)\r\n\tat com.qa.stepDefinition.LoginPageSteps.user_is_already_on_Login_Page(LoginPageSteps.java:50)\r\n\tat ✽.Given user is already on Login Page(D:/BDDTestNG/src/main/java/com/qa/feature/Login.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "LoginPageSteps.user_is_already_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "title of login page is Free CRM",
+            "match": {
+              "location": "LoginPageSteps.title_of_login_page_is_Free_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "logo of login page is CRMlogo",
+            "match": {
+              "location": "LoginPageSteps.logo_of_login_page_is_CRMlogo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters username and password",
+            "match": {
+              "location": "LoginPageSteps.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginPageSteps.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Login Feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "D:/BDDTestNG/src/main/java/com/qa/feature/Login.feature"
+  }
+]

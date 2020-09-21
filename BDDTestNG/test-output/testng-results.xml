@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="1096" started-at="2020-09-21T14:47:51Z" finished-at="2020-09-21T14:47:52Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.testrunner.TestRunner@1928643]" name="feature" class="com.qa.testrunner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="FREE CRM Test" duration-ms="1096" started-at="2020-09-21T14:47:51Z" finished-at="2020-09-21T14:47:52Z">
+      <class name="com.qa.testrunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.testrunner.TestRunner@1928643]" name="setUpClass" is-config="true" duration-ms="502" started-at="2020-09-21T14:47:51Z" finished-at="2020-09-21T14:47:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.testrunner.TestRunner@1928643]" name="feature" duration-ms="366" started-at="2020-09-21T14:47:52Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-09-21T14:47:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Free CRM Login Feature]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at com.qa.testrunner.TestRunner.feature(TestRunner.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+at com.qa.base.TestBase.initialization(TestBase.java:63)
+at com.qa.stepDefinition.LoginPageSteps.user_is_already_on_Login_Page(LoginPageSteps.java:50)
+at ✽.Given user is already on Login Page(D:/BDDTestNG/src/main/java/com/qa/feature/Login.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.testrunner.TestRunner@1928643]" name="tearDownClass" is-config="true" duration-ms="27" started-at="2020-09-21T14:47:52Z" finished-at="2020-09-21T14:47:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.qa.testrunner.TestRunner -->
+    </test> <!-- FREE CRM Test -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>
